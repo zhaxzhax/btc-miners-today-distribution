@@ -4,15 +4,15 @@ import './BlockStats.css';
 
 function BlockStats() {
     const [blockData, setBlockData] = useState({
-        totalBlocks: 119,
-        dayBlocksReward: "743.75000000",
-        feeReward: "24.35458562",
-        averageBlockTimeMinutes: "11",
-        averageBlockTimeSeconds: "11",
-        averageBlockSize: "1 849 178 ",
-        blocksSize: "220 052 259 ",
-        maxBlockSize: "3 412 470 ",
-        minBlockSize: "1 168 306 "
+        totalBlocks: 0,
+        dayBlocksReward: "",
+        feeReward: "",
+        averageBlockTimeMinutes: "",
+        averageBlockTimeSeconds: "",
+        averageBlockSize: "",
+        blocksSize: "",
+        maxBlockSize: "",
+        minBlockSize: ""
     });
     function fetchTotalBlocks() {
         const time = getTodayISOString();
